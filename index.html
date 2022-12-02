@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name Card</title>
+    <link
+      rel="stylesheet"
+      href="https://meyerweb.com/eric/tools/css/reset/reset200802.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+      * {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 300;
+      }
+      body {
+        justify-content: center;
+        width: 100vw;
+        overflow: hidden;
+      }
+      .card {
+        border-radius: 0;
+        border: none;
+      }
+      .logo {
+        background: #000;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (min-width: 768px) {
+        body {
+          align-items: center;
+          height: 100vh;
+        }
+        .card {
+          box-shadow: 0 0 5px #eeee;
+        }
+        .card::before {
+          content: '';
+          position: absolute;
+          top: -140px;
+          left: 475px;
+          width: 200px;
+          height: 200px;
+          background: #fff;
+          transform: rotate(135deg);
+          box-shadow: 10px 0 3px -6px #0001;
+        }
+        .card::after {
+          content: '';
+          position: absolute;
+          top: 235px;
+          left: -135px;
+          width: 200px;
+          height: 200px;
+          background: #fff;
+          transform: rotate(-45deg);
+          box-shadow: 10px 0 3px -6px #0001;
+        }
+      }
+    </style>
+  </head>
+  <body class="d-flex">
+    <div class="card mb-3" style="max-width: 540px">
+      <div class="row g-0">
+        <div class="logo col-md-5 d-flex">
+          <img
+            src="./images/LOGO.jpg"
+            class="img-fluid rounded-start col-6 col-md-12"
+          />
+        </div>
+        <div class="col-md-7">
+          <div class="card-body">
+            <p class="card-text mb-0">Bassist</p>
+            <h5 class="card-title fs-1">Josh Zhong</h5>
+            <p class="card-text mb-5">莎賓娜大樂隊</p>
+            <p class="card-text">
+              地址：新北市新莊區中正路510號<br />
+              電話：0978391317<br />
+              E-Mail：sabrinaband2019@gmail.com<br />
+
+              Instagram：https://www.instagram.com/sabrina_band_2019
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script></script>
+  </body>
+</html>
